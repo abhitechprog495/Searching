@@ -2,28 +2,28 @@
 #include<conio.h>
 void main()
 {
-  Int list[10],I,n,x;
-  Clrscr();
-  Printf(“Enter The Number Of Elements : “);
-  Scanf(“%d”,&n);
-  Printf(“Enter The Elements : “);
-  For (i=0;i<n;i++)
+  int list[10],i,n,x;
+  clrscr();
+  printf(â€œEnter The Number Of Elements : â€œ);
+  scanf(â€œ%dâ€,&n);
+  printf(â€œEnter The Elements : â€œ);
+  for (i=0;i<n;i++)
   {
-   Scanf(“%d”,&list[i]);
+   scanf(â€œ%dâ€,&list[i]);
   }
- Printf(“Enter The Element To Search : “);
-Scanf(“%d”,&x);
-For (i=0;i<n;i++)
+ printf(â€œEnter The Element To Search : â€œ);
+scanf(â€œ%dâ€,&x);
+for (i=0;i<n;i++)
 {
- If (list[i]==x)
+ if (list[i]==x)
  {
-  Printf(“%d Is Found At Location %d”,x,i+1);
-  Break;
+  printf(â€œ%d Is Found At Location %dâ€,x,i+1);
+  break;
  }
 }
- If (i==n)
+ if (i==n)
  {
-  printf(“%d Is Not Present In The List”,x);
+  printf(â€œ%d Is Not Present In The Listâ€,x);
  }
  getch();
 }
